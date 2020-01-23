@@ -1,0 +1,45 @@
+body {
+    background-color: rgb(1, 25, 104);
+    color: white;
+}
+
+header {
+    background-color: rgb(29, 0, 88);
+    height: 100px;
+    line-height: 100px;
+    width: 100%;
+}
+
+canvas {
+    background-color: rgb(193, 193, 193);
+    margin: 10px;
+    padding: 20px;
+}
+
+.game-name {
+    color: palegreen;
+    font-family: 'Bangers', cursive;
+    font-size: 50px;
+    padding: 0 0 0 40px;
+    text-align: center;
+}
+
+#game-screen {
+    border: 2px solid black;
+}
+
+footer {
+    background-color: rgb(29, 0, 88);
+    height: 100px;
+    line-height: 100px;
+    width: 100%;
+}
+
+.created-by {
+    color: palegreen;
+    float: right;
+    font-family: 'Bangers', cursive;
+    font-size: 20px;
+    padding: 0 40px 0 0;
+    text-align: right;
+}
