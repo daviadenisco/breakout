@@ -6,12 +6,32 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel='stylesheet' href='styles.css'>
     <link href="https://fonts.googleapis.com/css?family=Bangers&display=swap" rel="stylesheet">
-    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Orbitron&display=swap" rel="stylesheet">
+    <title>BreakOUT</title>
 </head>
 <body>
-    <header><span class='game-name'>b r e a k O U T</span></header>
-    <canvas id='game-screen' width='800' height='600'></canvas>
-    <script src='app.js' async defer></script>
-    <footer><span class='created-by'>created by davia</span></footer>
+    <header>
+        <span class='game-name'>b r e a k O U T</span>
+        <span id='button'>
+            <button id='new-game'>New Game</button>  
+        </span>
+    </header>
+    <img id='brick' src='assets/images/brick.png'>
+    <img id='ball' src='assets/images/tennis-ball-square.jpg'>
+    <img id='game-over' src='assets/images/game-over.png'>
+    <canvas id='game-screen' width='806' height='600'></canvas>
+    <script src='game.js' async defer></script>
+    <script src='input.js' async defer></script>
+    <script src='helpers.js' async defer></script>
+    <script src='ball.js' async defer></script>
+    <script src='brick.js' async defer></script>
+    <script src='paddle.js' async defer></script>
+    <script src='game-setup.js' async defer></script>
+    <footer>
+        <span class='created-by'>d a v i a</span>
+        <span class='created-by'> b y </span>
+        <span class='created-by'>c r e a t e d</span>
+    </footer>
 </body>
 </html>

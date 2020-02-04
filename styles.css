@@ -1,45 +1,119 @@
 body {
-    background-color: rgb(1, 25, 104);
+    background-color: #000000;
+    /* background-color: rgb(5, 3, 104); */
     color: white;
 }
 
 header {
-    background-color: rgb(29, 0, 88);
+    /* background-color: #000000; */
+    background-color: rgb(5, 3, 104);
     height: 100px;
     line-height: 100px;
+    position: fixed;
+    right: 0;
+    top: 0;
     width: 100%;
 }
 
+button {
+    background: linear-gradient(180deg, #2fa80b, #c0f3b1, #2fa80b);
+    background-color: rgb(40, 43, 43);
+    box-shadow: 5px 2px 2px rgb(178, 3, 254);
+    border-radius: 30px;
+    color: white;
+    cursor: pointer;
+    align-items: right;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 26px 40px 0 0;
+    outline: none;
+    overflow: hidden;
+    padding: 10px;
+    text-shadow: rgb(5, 3, 104) 2px 2px 4px, rgb(5, 3, 104) 2px 2px 8px;
+    width: 160px;
+}
+
+#button {
+    float: right;
+    padding: 0 0 20px 0;
+}
+
+img {
+    display: none;
+    /* position: relative;
+    z-index: 1; */
+}
+
 canvas {
-    background-color: rgb(193, 193, 193);
-    margin: 10px;
-    padding: 20px;
+    background-color: rgb(244, 241, 250);
+    bottom: 0;
+    padding: 0;
+    left: 0;
+    margin: auto;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
 }
 
 .game-name {
-    color: palegreen;
-    font-family: 'Bangers', cursive;
+    animation: glow 1s ease-in-out infinite alternate;
+    background: -webkit-linear-gradient(rgba(73, 244, 62, 1) 0%, rgba(5, 71, 240, 1) 100%);
+    font-family: 'Bangers';
     font-size: 50px;
-    padding: 0 0 0 40px;
+    padding: 0 20px 0 40px;
     text-align: center;
+    text-shadow: 1px 0px 1px rgb(73, 244, 62, 1), 0px 1px 1px rgba(5, 71, 240, 1), 2px 1px 1px rgb(178, 3, 254), 1px 2px 1px rgba(5, 71, 240, 1), 3px 2px 1px rgb(178, 3, 254), 2px 3px 1px rgba(5, 71, 240, 1), 4px 3px 1px rgb(178, 3, 254), 3px 4px 1px rgba(5, 71, 240, 1), 5px 4px 1px rgb(178, 3, 254), 4px 5px 1px rgba(5, 71, 240, 1), 6px 5px 1px rgb(178, 3, 254), 5px 6px 1px rgba(5, 71, 240, 1), 7px 6px 1px rgb(178, 3, 254);
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 #game-screen {
     border: 2px solid black;
+    background-image: url(assets/images/galaxy.jpg);
+    /* background-image: url(galaxy2.jpg); */
+    /* background-image: url(galaxy3.jpg); */
+    /* background-image: url(galaxy4.jpg); */
+    /* background-image: url(galaxy5.jpg); */
+    /* background-image: url(galaxy6.jpg);     */
+    /* background-image: url(galaxy7.jpg); */
+    /* background-image: url(galaxy8.jpg); */
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 footer {
-    background-color: rgb(29, 0, 88);
+    /* background-color: #000000; */
+    background-color: rgb(5, 3, 104);
+    bottom: 0;
     height: 100px;
+    left: 0;
     line-height: 100px;
+    position: fixed;
     width: 100%;
 }
 
 .created-by {
-    color: palegreen;
+    animation: glow 1s ease-in-out infinite alternate;
+    /* background: -webkit-linear-gradient(rgba(73, 244, 62, 1) 0%, rgba(5, 71, 240, 1) 100%); */
     float: right;
-    font-family: 'Bangers', cursive;
+    /* font-family: 'Bangers', cursive; */
+    font-family: 'Orbitron', sans-serif;
     font-size: 20px;
     padding: 0 40px 0 0;
     text-align: right;
+    text-shadow: 1px 0px 1px rgb(251, 252, 251), 0px 1px 1px rgba(5, 71, 240, 1), 2px 1px 1px rgb(178, 3, 254), 1px 2px 1px rgba(5, 71, 240, 1), 3px 2px 1px rgb(178, 3, 254), 2px 3px 1px rgba(5, 71, 240, 1), 4px 3px 1px rgb(178, 3, 254), 3px 4px 1px rgba(5, 71, 240, 1), 5px 4px 1px rgb(178, 3, 254), 4px 5px 1px rgba(5, 71, 240, 1), 6px 5px 1px rgb(178, 3, 254), 5px 6px 1px rgba(5, 71, 240, 1), 7px 6px 1px rgb(178, 3, 254);
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
+
+/* let brickColors = ['#5bfcbf', '#0e271e', '#1e523e', '#2d7c5e', '#3ca77f', '#4cd19f']; // shades of green
+let moreBrickColors = ['#5bfcbf', '#5bfc7f', '#5bfc9f', '#5bfcbf', '#5bfcdf', '#5bf9fc']; // nice neon-ish selection
+let evenMoreBrickColors = ['#5bfcbf', '#6e5bfc', '#fc5b98', '#e8fc5b']; // green and pink i think
+let brickLikeColors = ['#ff4835', '#2a0c09', '#551812', '#80241b', '#aa3023', '#d43c2c']; // shades of red bricks
+let pinkOrangeBricks = ['#ff4835', '#ff3573', '#ff354a', '#ff4835', '#ff7035', '#ff9935']; */
