@@ -18,7 +18,6 @@ class Paddle {
         };
     };
 
-    
     moveLeft() {
         this.speed = -this.maxSpeed;
     };
@@ -40,7 +39,7 @@ class Paddle {
             this.width = 100;
         }
         // ctx.fillStyle = 'lightgrey';
-        ctx.fillStyle = 'blue';
+        ctx.fillStyle = 'rgb(120, 2, 171)';
 
         ctx.fillRect(this.position.x, this.position.y, this.width, this.height);
         // ctx.arc(this.position.x, this.position.y, 10, 0, 2 * Math.PI);
