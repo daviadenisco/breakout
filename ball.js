@@ -21,17 +21,17 @@ class Ball {
     }
 
     draw(ctx) {
-        // ctx.drawImage(
-        //     this.image, 
-        //     this.position.x, 
-        //     this.position.y, 
-        //     this.size, 
-        //     this.size
-        // );
+        ctx.drawImage(
+            this.image, 
+            this.position.x, 
+            this.position.y, 
+            this.size, 
+            this.size
+        );
         // ctx.arc(this.position.x + 10, this.position.y + 10, 10, 0, 2 * Math.PI);
         // ctx.stroke();
-        ctx.fillStyle = 'red';
-        ctx.fillRect(this.position.x, this.position.y, this.size, this.size);
+        // ctx.fillStyle = 'red';
+        // ctx.fillRect(this.position.x, this.position.y, this.size, this.size);
         // ctx.arc(this.position.x, this.position.x, 10, 0, 2 * Math.PI);
         // ctx.stroke();
      
